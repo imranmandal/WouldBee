@@ -8,8 +8,8 @@ function Copyright() {
         </p>
         <div>
             <p>
-                <a href="">Privacy Policy</a>
-                <a href="">Term of Use</a>
+                <a href="https://www.wouldbee.com/privacy">Privacy Policy</a>
+                <a href="https://www.wouldbee.com/terms">Term of Use</a>
             </p>
             
             

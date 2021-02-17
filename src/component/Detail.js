@@ -1,15 +1,12 @@
 import React , { useState } from 'react'
 import phone1 from '../Images/phone1.png'
 import phone2 from '../Images/phone2.png'
+import phone3 from '../Images/phone3.png'
+import phone4 from '../Images/phone4.png'
  
 function Detail() {
   return (
     <div className="detail">
-
-
-
-        
-        
         
         
         <div className="para para1">
@@ -18,19 +15,19 @@ function Detail() {
             <img className="img1" src={phone1} alt=""/>
         </div>
         <div className="para para2">
-            <h3>Let AI find your match - (some cool AI image, eg. neural network)</h3>
-            <p>Check your compatibility score based on our AI algorithm</p>
+            <h3>Free Yet SAFE</h3>
+            <p>We are fanatic about our users safety. We take all possible measures to keep Fraudsters and Scammers away</p>
             <img className="img2" src={phone2} alt=""/>
         </div>
         <div className="para para3">
-            <h3>Manually Verified Profiles - (detective image)</h3>
-            <p>We take extra care to keep scamster and fake profiles out of our platform</p>
-            <img className="img3" src="https://betterhalf.ai/static/media/mob3.5e8cf23b.png" alt=""/>
+            <h3>Smart Compatibility </h3>
+            <p>Check your compatibility score based on our proprietary compatibility calculator</p>
+            <img className="img3" src={phone3} alt=""/>
         </div>
         <div className="para para4">
-            <h3>Take control of your privacy - (privacy setting screenshot)</h3>
-            <p>Manage how much information you want to share</p>
-            <img className="img4" src="https://betterhalf.ai/static/media/mob4.7dfe00a3.png" alt=""/>
+            <h3>Take control of your privacy</h3>
+            <p>You are in full control of your privacy. You decide who can see your information and how much information to reveal</p>
+            <img className="img4" src={phone4} alt=""/>
         </div>
     </div>
   )
