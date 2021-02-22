@@ -1,0 +1,975 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+.App-body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 12%;
+}
+
+.logo {
+  height: 110px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.header {
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.52),
+    rgba(222, 49, 99, 0.73)
+  );
+  color: #fff;
+  padding: auto;
+}
+
+.bg {
+  width: auto;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.header-content h1 {
+  font-size: 3.5rem;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.download {
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #e11c74;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+.download i{
+  padding: 0 5px;
+}
+
+.download-btn {
+  margin-top: 30px;
+}
+
+.download-btn a {
+  text-decoration: none;
+  color: #e11c74;
+}
+
+.download img {
+  vertical-align: top;
+  margin: 5px 0 0 10px;
+}
+
+/* -----------Detail */
+
+.detail {
+  position: relative;
+  padding: 5% 15%;
+  background-color: #fff;
+}
+
+.detail img {
+  position: absolute;
+  height: 500px;
+}
+
+.img1 {
+  top: 5%;
+  left: 15%;
+}
+.img2 {
+  top: 28%;
+  right: 15%;
+}
+.img3 {
+  top: 50%;
+  left: 15%;
+}
+.img4 {
+  top: 80%;
+  right: 15%;
+}
+
+.para {
+  width: 500px;
+  position: absolute;
+}
+
+.para p {
+  color: #aab7b8;
+}
+
+.para1 {
+  margin-top: 20%;
+  left: 35%;
+}
+.para2 {
+  top: 15%;
+  right: 20%;
+}
+.para3 {
+  top: 60%;
+  left: 30%;
+}
+.para4 {
+  top: 80%;
+  right: 20%;
+}
+
+/* -----------------------About us */
+
+.about {
+  padding: 0 15% 5%;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 2em;
+  color: #707b7c;
+}
+
+
+/* --------------------------------FAQ's */
+
+.faq {
+  padding: 0 15% 5%;
+}
+
+.faq-d {
+  padding: 1em 0;
+  border-bottom: 1px solid #d5dbdb;
+}
+
+.faq-d:last-child {
+  border-bottom: 0px;
+}
+
+.faq-title {
+  display: flex;
+  cursor: pointer;
+}
+
+.faq-title h3 {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  line-height: 2.5rem;
+}
+
+.faq-title i {
+  height: 25px;
+  font-size: 22px;
+  color: #e11c74;
+  margin-top: 14px;
+  margin-right: 10px;
+  transform: translate(0, -50%);
+}
+
+.faq-para {
+  border-left: 0.5rem solid #e5e8e8;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #707b7c;
+}
+
+/* ---------------------------Contact us */
+
+.contact {
+  padding: 0 15% 3%;
+}
+
+.contactS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5% 0 0;
+}
+
+.sub-contact {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  flex: 1 1 200px;
+  margin: 0 3rem 5rem 0;
+}
+
+.sub-contact .title-icon {
+  font-size: 50px;
+  padding: 1rem 0;
+  color: #e11c74;
+}
+
+.sub-contact p a {
+  text-decoration: none;
+  color: #707b7c;
+}
+
+.sub-contact h3 {
+  padding: 1rem 0;
+}
+
+.sub-contact p i {
+  padding: 0 10px 0 0;
+}
+
+/* -------------------------Telegram */
+
+.telegram-outer {
+  padding: 0 15% 8%;
+}
+
+.telegram-outer .outer-p {
+  font-size: 1.1rem;
+  line-height: 2em;
+  color: #707b7c;
+}
+
+.telegram-inner {
+  padding-bottom: 4%;
+}
+
+.telegram-inner-upper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3% 0;
+}
+
+.telegram-inner-upper a {
+  text-decoration: none;
+  color: #000;
+}
+
+.telegram-card {
+  flex: 1 1 200px;
+  border: 1px solid #cdd9da;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.card-inner {
+  padding: 30px;
+}
+
+.telegram-card:hover {
+  box-shadow: 0 0 15px #bdc7c9;
+}
+
+.telegram-card i {
+  font-size: 120px;
+  color: #e11c74;
+}
+
+.telegram-card h2 {
+  padding: 5px 10px;
+}
+
+.telegram-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.telegram-btn a{
+  color: #fff;
+  text-decoration: none;
+  background-color: #e11c74;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.telegram-btn a:hover {
+  color: #fff;
+  box-shadow: 0 0 20px #aab7b8;
+}
+
+.telegram-btn button a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 3rem;
+}
+
+.telegram-btn i {
+  margin-right: 1rem;
+}
+
+.telegram-video {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 56.25% 5% 0%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.telegram-video p {
+  position: absolute;
+  top: 10%;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.react-player {
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
+/* ------------------------ privacy And terms*/
+
+.privacy-section,
+.terms-section {
+  padding: 0 15% 5%;
+}
+
+.privacy-section h5,
+.terms-section h5 {
+  padding: 2rem 0 1rem 0;
+}
+
+.privacy-section p,
+.terms-section p {
+  line-height: 1.8rem;
+}
+
+.back-btn {
+  color: #fff;
+  background-color: #e11c74;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+  background-color: #e11c74;
+  transform: scale(1.05);
+}
+
+.privacy-section .back-btn:hover,
+.terms-section .back-btn:hover {
+  box-shadow: 0 0 20px #bdc7c9;
+  background-color: #e11c74;
+}
+
+/* ------------------------- Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5% 5% 0.5%;
+  background: #e11c74;
+  color: #fff;
+  font-size: 120%;
+  margin-top: auto;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-top ul {
+  padding: 0;
+}
+
+.footer-top ul li {
+  list-style: none;
+  padding: 0.2em 0;
+}
+
+.footer-top ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 30px;
+  font-size: 0.9rem;
+}
+
+footer .social-h3 {
+  margin-left: 4px;
+}
+
+footer .social {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: 0;
+  border-bottom: 0px !important;
+}
+
+.social a {
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.social .facebook {
+  background-color: #3b5998;
+}
+.social .facebook:hover {
+  box-shadow: 0 0 20px #fff;
+}
+
+.social .instagram {
+  background-color: #8134af;
+}
+.social .instagram:hover {
+  box-shadow: 0 0 20px #fff;
+}
+
+.social .twitter {
+  background-color: #1da1f2;
+}
+.social .twitter:hover {
+  box-shadow: 0 0 20px #fff;
+}
+
+.social .linkedin {
+  background-color: #0e76a8;
+}
+.social .linkedin:hover {
+  box-shadow: 0 0 20px #fff;
+}
+
+/* ------------copyright */
+
+.footer-bottom {
+  text-align: center;
+}
+
+.copyright {
+  color: #e699dc;
+}
+
+.copyright p {
+  font-size: 0.8rem;
+  margin-bottom: 0px !important;
+}
+
+/*----------------------------- wide displays */
+
+@media (min-width: 1010px){
+  .bg{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .img1 {
+    top: 100px;
+  }
+  .img2 {
+    top: 23%;
+  }
+  .img3 {
+    top: 47%;
+  }
+  .img4 {
+    top: 70%;
+  }
+}
+
+/*------------------ min1200  */
+
+@media (min-width: 1200px) {
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .header p {
+    line-height: 1.5em;
+  }
+  .header-content {
+    width: 70%;
+  }
+
+  .detail {
+    position: relative;
+    margin: 0;
+    padding-bottom: 8%;
+  }
+  .detail img {
+    height: 350px;
+    position: absolute;
+  }
+
+  .para {
+    width: 45%;
+    padding: 0;
+    position: static;
+  }
+  .para h3 {
+    font-size: 2em;
+  }
+  .para p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+
+  .para1 {
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  .para2 {
+    margin-top: 10%;
+    margin-left: 32%;
+  }
+
+  .para3 {
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+
+  .para4 {
+    margin-top: 10%;
+    margin-left: 32%;
+  }
+
+  .img1 {
+    top: 5%;
+  }
+  .img2 {
+    top: 25%;
+  }
+  .img3 {
+    top: 45%;
+  }
+  .img4 {
+    top: 65%;
+  }
+
+  .sub-contact {
+    min-width: 300px;
+  }
+}
+
+/* ---------------Desktop and Laptop------------- */
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .header p {
+    line-height: 2em;
+    font-size: 1.5rem;
+  }
+  .header-content {
+    width: 70%;
+  }
+
+  .detail {
+    position: relative;
+    margin: 0;
+    padding-bottom: 12%;
+  }
+  .detail img {
+    height: 350px;
+    position: absolute;
+  }
+
+  .para {
+    width: 47%;
+    padding: 0;
+    position: static;
+  }
+  .para h3 {
+    font-size: 2em;
+  }
+  .para p {
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+
+  .para1 {
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  .para2 {
+    margin-top: 12%;
+    margin-left: 30%;
+  }
+
+  .para3 {
+    margin-top: 12%;
+    margin-left: 25%;
+  }
+
+  .para4 {
+    margin-top: 12%;
+    margin-left: 30%;
+  }
+
+  .img1 {
+    top: 5%;
+    left: 10%;
+  }
+  .img2 {
+    right: 10%;
+    top: 25%;
+  }
+  .img3 {
+    left: 10%;
+    top: 45%;
+  }
+  .img4 {
+    right: 10%;
+    top: 65%;
+  }
+
+  .sub-contact {
+    min-width: 300px;
+  }
+}
+
+/* --------Tablet------- */
+@media (min-width: 769px) and (max-width: 1023px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    padding: 0;
+  }
+  nav img {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .bg {
+    width: auto; 
+    height: 100%;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+  .header p {
+    font-size: 1.5rem;
+  }
+  .header-content {
+    width: 80%;
+    transform: translate(-50%, 0);
+  }
+
+  .detail {
+    position: relative;
+    margin: 0;
+  }
+
+  
+
+  .para {
+    width: 62%;
+    padding: 0;
+    margin: 10% 0;
+    position: static;
+  }
+  .para img {
+    height: 300px;
+    position: absolute;
+  }
+  .para h3 {
+    font-size: 2em;
+  }
+  .para p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  .para1 {
+    margin-top: 5%;
+    margin-left: 32%;
+  }
+
+  .para2 {
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+
+  .para3 {
+    margin-top: 20%;
+    margin-left: 32%;
+  }
+
+  .para4 {
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+
+  .img1 {
+    top: 5%;
+    left: 10%;
+  }
+  .img2 {
+    top: 27%;
+    right: 10%;
+  }
+  .img3 {
+    top: 48%;
+    left: 10%;
+  }
+  .img4 {
+    top: 68%;
+    right: 10%;
+  }
+
+  .telegram-video p {
+    top: 10%;
+    line-height: normal;
+  }
+}
+
+/* ---------------mobile phones------------------ */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+  .header p {
+    font-size: 1.5rem;
+  }
+  .header-content {
+    width: 90%;
+    transform: translate(-50%, -15%);
+  }
+
+  .bg {
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detail {
+    position: static;
+    margin: 0;
+  }
+  .detail img {
+    height: 700px;
+    position: static;
+  }
+
+  .para {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin: 10em 0;
+    position: static;
+  }
+  .para h3 {
+    font-size: 2.5em;
+  }
+  .para p {
+    font-size: 1.5em;
+  }
+
+  .faq {
+    padding: 5% 10%;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 120%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-top div {
+    border-bottom: 3px solid #fff;
+    margin-bottom: 16px;
+  }
+
+  .social {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .telegram-outer {
+    padding: 0 10% 20%;
+  }
+
+  .telegram-video p {
+    line-height: normal;
+    font-size: 1.3rem;
+    top: 0;
+  }
+
+  .react-player {
+    top: 20%;
+  }
+}
+
+/* -----------------------low end device */
+@media (max-width: 468px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .App-body{
+    overflow-x: hidden;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  .logo {
+    padding: 20px 0;
+    margin-left: 50%;
+    transform: translate(-40%, 0);
+  }
+
+
+  .bg{
+    height: 100%;
+    width: auto;
+  }
+  .header {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header p {
+    font-size: 1.3rem;
+  }
+  .header-content {
+    width: 80%;
+    transform: translate(-50%, -15%);
+  }
+
+  .detail img {
+    height: 400px;
+    position: static;
+  }
+  .para h3 {
+    font-size: 1.5em;
+  }
+  .para p {
+    font-size: 1em;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+
+
+  .telegram-video {
+    height: 40%;
+  }
+
+  .react-player {
+    top: 20%;
+  }
+
+  .telegram-btn a{
+    font-size: 1.2rem;
+  }
+  .telegram-btn a i{
+    margin-right: 5px;
+  }
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: rgba(246, 10, 60, 0.5);
+  border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+} */
